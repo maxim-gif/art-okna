@@ -1,5 +1,6 @@
 :root {
     overflow-x: auto;
+    font-family: "Source Sans 3", sans-serif;
 }
 :root::-webkit-scrollbar {
     display: none;
@@ -14,10 +15,5 @@ input,
 button {
     border: none;
     outline: none;
-}
-button {
-    background: #E68A00;
-    border-radius: 15px;
-    color: white;
-    font-size: 16px;
+    font-family: "Source Sans 3", sans-serif;
 }

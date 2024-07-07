@@ -2,59 +2,29 @@ import styles from "./header.module.scss";
 
 export const Header = () => {
   return (
-    <>
-      <div className={styles.top}>
+    <div className={styles.header}>
+      <img src="/miniLogo.svg"></img>
+      <div>
         <div>
-          <span className={styles.top_time}>Мы работаем с 09:00 до 17:00</span>
-          <img className={styles.top_iconPlace} src="/mapIcon.svg"></img>
-          <span className={styles.top_nameCity}>Москва</span>
-          <img className={styles.top_iconTell} src="/tell.svg"></img>
-          <span className={styles.top_phone}>+7 (495) 109-41-40</span>
-          <img className={styles.top_iconMail} src="/mail.svg"></img>
-          <span className={styles.top_mail}>okna@vekaplus.ru</span>
+          <img src="/place.svg"></img>
+          <span className={styles.header_text}>Москва и МО</span>
         </div>
-        <div>
-          <span className={styles.top_actions}>Акции</span>
-          <span className={styles.top_QandA}>Вопрос-ответ</span>
-        </div>
+        <span className={styles.header_text}>info@100-dverei.ru</span>
       </div>
-      <div className={styles.main}>
-        <div className={styles.main_left}>
-          <img className={styles.main_logo} src="/logoMain.svg"></img>
-          <div className={styles.main_box}>
-            <img className={styles.main_iconCalc} src="/calculator.svg"></img>
-            <span className={styles.main_name}>Калькулятор</span>
-          </div>
-          <div className={styles.main_box}>
-            <img className={styles.main_iconBox} src="/size.svg"></img>
-            <span className={styles.main_name}>Вызвать замерщика</span>
-          </div>
-          <div className={styles.main_box}>
-            <img className={styles.main_iconBox} src="/pay.svg"></img>
-            <span className={styles.main_name}>Оплата</span>
-          </div>
+      <button className={styles.header_button}>Бесплатный замер</button>
+      <div className={styles.header_contactsBox}>
+        <div className={styles.header_contacts}>
+          <img src="/twiter.svg"></img>
+          <img src="/whatsapp.svg"></img>
+          <span className={styles.header_phone}>+7 (495) 023-67-80</span>
         </div>
-        <div className={styles.main_right}>
-          <button className={styles.main_button}>Заказать звонок</button>
-          <div className={styles.main_icons}>
-            <img src="/twiter.svg" alt="" />
-            <img src="/whatsapp.svg" alt="" />
-            <img src="/search.svg" alt="" />
-            <img src="/basket.svg" alt="" />
-          </div>
-        </div>
+        <span>Ежедневно с 9:00 до 22:00</span>
       </div>
-      <nav className={styles.nav}>
-        <span>Каталог</span>
-        <span>Окна</span>
-        <span>Двери</span>
-        <span>Балконы и лоджии</span>
-        <span>Окна в дом</span>
-        <span>О компании</span>
-        <span>Услуги</span>
-        <span>Цены</span>
-        <span>Контакты</span>
-      </nav>
-    </>
+      <div className={styles.header_search}>
+        <img src="/search.svg"></img>
+        <img src="/basket.svg"></img>
+        <span>0</span>
+      </div>
+    </div>
   );
 };

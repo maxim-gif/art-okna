@@ -1,0 +1,30 @@
+.footer {
+    height: 610px;
+    width: 100%;
+    background: #022D40;
+    padding: 38px 90px 43px 90px;
+    &_logo {
+        width: 133px;
+        height: 34px;
+        margin-bottom: 38px;
+    }
+    &_main{
+        display: flex;
+        justify-content: space-between;
+        height: 428px;
+    }
+    &_left {
+        width: 833px;
+        border-radius: 10px;
+        background-color: rgba(255, 255, 255, 0.082);
+    }
+    &_right {
+        width: 407px;
+    }
+    &_rightTop {
+
+    }
+    &_rightBottom {
+        
+    }
+}
