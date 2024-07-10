@@ -12,6 +12,7 @@ export const Header = () => {
         <span className={styles.header_text}>info@100-dverei.ru</span>
       </div>
       <button className={styles.header_button}>Бесплатный замер</button>
+      <button className={styles.header_button}>Калькулятор</button>
       <div className={styles.header_contactsBox}>
         <div className={styles.header_contacts}>
           <img src="/twiter.svg"></img>

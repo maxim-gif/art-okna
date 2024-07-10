@@ -17,3 +17,7 @@ button {
     outline: none;
     font-family: "Source Sans 3", sans-serif;
 }
+a {
+    color: white;
+    text-decoration: none;
+}

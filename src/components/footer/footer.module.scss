@@ -1,30 +1,27 @@
 .footer {
-    height: 610px;
-    width: 100%;
-    background: #022D40;
-    padding: 38px 90px 43px 90px;
-    &_logo {
-        width: 133px;
-        height: 34px;
-        margin-bottom: 38px;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 13%;
+    padding-top: 30px;
+    gap: 20px;
+  height: 136px;
+  background-color: #1f3faa;
+  color: white;
+  & > div {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    & > img {
+        margin-top: 5px;
     }
-    &_main{
+    & > div {
         display: flex;
-        justify-content: space-between;
-        height: 428px;
+        flex-direction: column;
+        align-items: flex-start;
     }
-    &_left {
-        width: 833px;
-        border-radius: 10px;
-        background-color: rgba(255, 255, 255, 0.082);
+    & > span {
+        font-size: 18px;
+        width: 200px;
     }
-    &_right {
-        width: 407px;
-    }
-    &_rightTop {
-
-    }
-    &_rightBottom {
-        
-    }
+  }
 }

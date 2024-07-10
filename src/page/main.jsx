@@ -1,11 +1,10 @@
 import styles from './main.module.scss'
 import { Header } from '../components/header/header'
-// import { Footer } from "../components/footer/footer";
+import { Footer } from '../components/footer/footer'
 // import { useState } from 'react'
 
 export const Main = () => {
     // const [priceSwitch, setPriceSwitch] = useState(0)
-   
 
     return (
         <div className={styles.main}>
@@ -62,6 +61,12 @@ export const Main = () => {
                     </span>
                 </div>
                 <div className={styles.price_list}>
+                <div className={styles.price_arrowL}>
+                <img src='/arrowL.svg'></img>
+                </div>
+                <div className={styles.price_arrowR}>
+                    <img src='/arrowR.svg'></img>
+                </div>
                     <div className={styles.price_item}>
                         <span className={styles.price_name}>
                             Рехау (Германия)
@@ -75,48 +80,7 @@ export const Main = () => {
                         </p>
                         <div></div>
                         <img src="/pexay.png"></img>
-                    </div>
-                    <div className={styles.price_item}>
-                        <span className={styles.price_name}>
-                            Рехау (Германия)
-                        </span>
-                        <span className={styles.price_price}>от 5300 руб.</span>
-                        <p>
-                            Немецкая компания является лидером на рынке окон в
-                            РФ. Один из самых проверенных и надежных мировых
-                            брендов, которому доверяют миллионы людей в 53
-                            странах.
-                        </p>
-                        <div></div>
-                        <img src="/pexay.png"></img>
-                    </div>
-                    <div className={styles.price_item}>
-                        <span className={styles.price_name}>
-                            Рехау (Германия)
-                        </span>
-                        <span className={styles.price_price}>от 5300 руб.</span>
-                        <p>
-                            Немецкая компания является лидером на рынке окон в
-                            РФ. Один из самых проверенных и надежных мировых
-                            брендов, которому доверяют миллионы людей в 53
-                            странах.
-                        </p>
-                        <div></div>
-                        <img src="/pexay.png"></img>
-                    </div>
-                    <div className={styles.price_item}>
-                        <span className={styles.price_name}>
-                            Рехау (Германия)
-                        </span>
-                        <span className={styles.price_price}>от 5300 руб.</span>
-                        <p>
-                            Немецкая компания является лидером на рынке окон в
-                            РФ. Один из самых проверенных и надежных мировых
-                            брендов, которому доверяют миллионы людей в 53
-                            странах.
-                        </p>
-                        <div></div>
-                        <img src="/pexay.png"></img>
+                        
                     </div>
                     <div className={styles.price_item}>
                         <span className={styles.price_name}>
@@ -152,64 +116,55 @@ export const Main = () => {
                     <span>SOFTLINE 70</span>
                     <span>SOFTLINE 82</span>
                 </div>
-                <div className={styles.windows_listWindow}>
-                    <div className={styles.windows_item}>
-                        <div className={styles.windows_top}>
-                            <img src="/window1.png"></img>
-                            <span>Одностворчатое окно</span>
-                        </div>
-                        <div className={styles.windows_bottom}>
-                            <div>
-                                <span>Размер</span>
-                                <span>1000х1000</span>
-                            </div>
-                            <div>
-                                <span>Профиль</span>
-                                <span>WHS 72</span>
-                            </div>
-                            <div>
-                                <span>Стеклопакет</span>
-                                <span>32 мм</span>
+                <div className={styles.windows_main}>
+                    <div className={styles.windows_mainTop}>
+                        <span>VEKA WHS 60</span>
+                        <span>VEKA WHS 72</span>
+                        <span>VEKA EUROLINE 58</span>
+                        <span>VEKA SOFTLINE 70</span>
+                        <span>VEKA SOFTLINE 82</span>
+                    </div>
+                    <div className={styles.windows_mainMiddle}>
+                        <img className={styles.windows_arrowL} src='/arrowL.svg'></img>
+                        <img className={styles.windows_arrowR} src='/arrowR.svg'></img>
+                        <img src='/win3.png'></img>
+                        <div className={styles.windows_mainInfo}>
+                            <span className={styles.windows_mainTitle}>VEKA WHS 60 <span>Практичное решение</span></span>
+                            <p>Современный и недорогой профиль Veka WHS 60, подойдет для любых целей. Veka WHS 60 - совместная разработка немецких и английских специалистов. Четыре воздушные камеры, вместо привычных трех в профильных системах до 60 мм, дают улучшенные характеристики окна по энергосбережению и звукоизоляции.</p>
+                            <span className={styles.windows_mainPrice}>от 6 305 р./м2</span>
+                            <div className={styles.windows_mainButton}>
+                                <button>Рассчитать стоимость</button>
+                                <button>Помощь консультанта</button>
                             </div>
                         </div>
                     </div>
-                    <div className={styles.windows_item}>
-                        <div className={styles.windows_top}>
-                            <img src="/window1.png"></img>
-                            <span>Одностворчатое окно</span>
-                        </div>
-                        <div className={styles.windows_bottom}>
-                            <div>
-                                <span>Размер</span>
-                                <span>1000х1000</span>
-                            </div>
-                            <div>
-                                <span>Профиль</span>
-                                <span>WHS 72</span>
-                            </div>
-                            <div>
-                                <span>Стеклопакет</span>
-                                <span>32 мм</span>
-                            </div>
-                        </div>
+                    <div className={styles.windows_mainList}>
+                        <span>Одностворчатые</span>
+                        <span>Двухстворчатые</span>
+                        <span>Трехстворчатые</span>
+                        <span>Балконный блок</span>
                     </div>
-                    <div className={styles.windows_item}>
-                        <div className={styles.windows_top}>
-                            <img src="/window1.png"></img>
-                            <span>Одностворчатое окно</span>
-                        </div>
-                        <div className={styles.windows_bottom}>
-                            <div>
-                                <span>Размер</span>
-                                <span>1000х1000</span>
+                    <div className={styles.windows_mainBottom}>
+                        <img src='/win2.png'></img>
+                        <div>
+                            <div className={styles.windows_type}>
+                                <div>
+                                <span className={styles.windows_type_title}>Одностворчатые</span>
+                                <span className={styles.windows_type_key}>«Под ключ» <span>10 800 р.</span></span>
+                                </div>
+                                <div>
+                                <span className={styles.windows_type_sale}>СКИДКА 20%<span>при заказе прямо сейчас</span></span>
+                                <span className={styles.windows_type_price}>7 920 р.</span>
+                                </div>
                             </div>
-                            <div>
-                                <span>Профиль</span>
-                                <span>WHS 72</span>
-                            </div>
-                            <div>
-                                <span>Стеклопакет</span>
-                                <span>32 мм</span>
+                            <div className={styles.windows_calculate}>
+                                <div>
+                                    <img src='/layer.svg'></img>
+                                    <span>600 х 1200 мм (0,72 м2)</span>
+                                </div>
+                                <p>Поворотно-откидная створка <span>WHS 60:</span> 4 камеры, 60 мм
+    Стеклопакет: 32 мм, энергосберегающий</p>
+                                <button>Рассчитать</button>
                             </div>
                         </div>
                     </div>
@@ -301,6 +256,71 @@ export const Main = () => {
                 </div>
             </section>
 
+            <section className={styles.faq}>
+                <div className={styles.faq_top}>
+                    <div>
+                        <span>
+                            16 наиболее частых вопросов об окнах, о том как
+                            происходит заказ, монтаж, гарантийное обслуживание и
+                            т.д. и ответы на них
+                        </span>
+                        <button>Узнать ответы на вопросы</button>
+                    </div>
+                    <img src="/voprosiOkno.jpg"></img>
+                </div>
+                <div className={styles.faq_middle}>
+                    <span>Вся информация об окнах уже через минуту</span>
+                    <a href="tel:84952663901">+7495 266-39-01</a>
+                </div>
+                <div className={styles.faq_bottom}>
+                    <div className={styles.faq_bottomItem}>
+                        <img src="/sale.svg"></img>
+                        <div>
+                            <span>УЗНАЙТЕ СТОИМОСТЬ ОСТЕКЛЕНИЯ</span>
+                            <ul className={styles.faq_list}>
+                                <li>
+                                    Наши консультанты сделают расчёт Ваших окон
+                                    в производственной программе Прямо по
+                                    телефону.
+                                </li>
+                                <li>Расскажут об акциях и скидках.</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div className={styles.faq_bottomItem}>
+                        <img src="/line2.svg"></img>
+                        <div>
+                            <span>ПРОКОНСУЛЬТИРУЕМ О ЗАМЕРЕ ОКОН</span>
+                            <ul className={styles.faq_list}>
+                                <li>
+                                    Услуга замера в "Русских окнах" бесплатная и
+                                    ни к чему Вас не обязывает.
+                                </li>
+                                <li>
+                                    Назначьте удобное Вам время для приезда
+                                    замерщика.
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div className={styles.faq_bottomItem}>
+                        <img src="/drel.svg"></img>
+                        <div>
+                            <span>РАССКАЖЕМ ВСЁ О МОНТАЖЕ ОКОН</span>
+                            <ul className={styles.faq_list}>
+                                <li>
+                                    Что включает в себя услуга монтажа, сколько
+                                    стоит и что мы делаем бесплатно.
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <button className={styles.faq_button}>
+                    ЗАКАЖИТЕ КОНСУЛЬТАЦИЮ - МЫ ПЕРЕЗВОНИМ В ТЕЧЕНИЕ 15 МИНУТ
+                </button>
+            </section>
+
             <section className={styles.catalog}>
                 <div>
                     <span>Окна</span>
@@ -345,6 +365,7 @@ export const Main = () => {
                     <span>Акция</span>
                 </div>
             </section>
+            <Footer />
         </div>
     )
 }
